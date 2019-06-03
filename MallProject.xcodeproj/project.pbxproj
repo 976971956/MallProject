@@ -15,6 +15,7 @@
 		E567B73222A50F820028298D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E567B73122A50F820028298D /* main.m */; };
 		E567B73C22A50F820028298D /* MallProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E567B73B22A50F820028298D /* MallProjectTests.m */; };
 		E567B74722A50F820028298D /* MallProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E567B74622A50F820028298D /* MallProjectUITests.m */; };
+		EC1D1462B5D50EF77DCCB159 /* Pods_MallProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9A556B088F6EF6C1A96971 /* Pods_MallProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		748BD465063E1ED33A44BE8A /* Pods-MallProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MallProject/Pods-MallProject.debug.xcconfig"; sourceTree = "<group>"; };
+		DE9A556B088F6EF6C1A96971 /* Pods_MallProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MallProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E567B71F22A50F810028298D /* MallProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MallProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E567B72222A50F810028298D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E567B72322A50F810028298D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		E567B74222A50F820028298D /* MallProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MallProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E567B74622A50F820028298D /* MallProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallProjectUITests.m; sourceTree = "<group>"; };
 		E567B74822A50F820028298D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC5C0BDC2B241A25AC036BC /* Pods-MallProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MallProject/Pods-MallProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1D1462B5D50EF77DCCB159 /* Pods_MallProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0383D3AB48F94A8ED1CB7527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748BD465063E1ED33A44BE8A /* Pods-MallProject.debug.xcconfig */,
+				FFC5C0BDC2B241A25AC036BC /* Pods-MallProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA400A7B52EF4E1D1388ACED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A556B088F6EF6C1A96971 /* Pods_MallProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E567B71622A50F810028298D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				E567B73A22A50F820028298D /* MallProjectTests */,
 				E567B74522A50F820028298D /* MallProjectUITests */,
 				E567B72022A50F810028298D /* Products */,
+				0383D3AB48F94A8ED1CB7527 /* Pods */,
+				BA400A7B52EF4E1D1388ACED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E567B74B22A50F820028298D /* Build configuration list for PBXNativeTarget "MallProject" */;
 			buildPhases = (
+				6320A832029DF149A1DC3E98 /* [CP] Check Pods Manifest.lock */,
 				E567B71B22A50F810028298D /* Sources */,
 				E567B71C22A50F810028298D /* Frameworks */,
 				E567B71D22A50F810028298D /* Resources */,
+				AE5306AEB2C4319B8E7DB119 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +282,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6320A832029DF149A1DC3E98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MallProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE5306AEB2C4319B8E7DB119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MallProject/Pods-MallProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MallProject/Pods-MallProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E567B71B22A50F810028298D /* Sources */ = {
@@ -433,6 +498,7 @@
 		};
 		E567B74C22A50F820028298D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748BD465063E1ED33A44BE8A /* Pods-MallProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +517,7 @@
 		};
 		E567B74D22A50F820028298D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC5C0BDC2B241A25AC036BC /* Pods-MallProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
