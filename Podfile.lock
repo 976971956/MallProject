@@ -23,7 +23,8 @@ PODS:
   - LKDBHelper/standard (2.5.1):
     - FMDB
   - Masonry (1.1.0)
-  - MJExtension (3.0.15.1)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.13)
   - MJRefresh (3.1.15.3)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
@@ -35,7 +36,8 @@ DEPENDENCIES:
   - IQKeyboardManager
   - LKDBHelper
   - Masonry
-  - MJExtension
+  - MBProgressHUD
+  - MJExtension (~> 3.0.13.0)
   - MJRefresh
   - SDWebImage
   - SVProgressHUD
@@ -47,6 +49,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - LKDBHelper
     - Masonry
+    - MBProgressHUD
     - MJExtension
     - MJRefresh
     - SDWebImage
@@ -58,11 +61,12 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
   LKDBHelper: 9a276ba51f2e16263d46a9517e16cc9b03472664
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 92d4ed8cb11379065e8f6289f347b945d930312a
+PODFILE CHECKSUM: 912f81792956b8dd4393a31c1a4f9c249938a78d
 
 COCOAPODS: 1.5.2
