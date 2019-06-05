@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JHHomeViewController">
             <connections>
-                <outlet property="collectionView" destination="elx-H1-p4i" id="iXx-B7-sae"/>
+                <outlet property="collectionView" destination="elx-H1-p4i" id="ILN-QA-IML"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,17 +22,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="elx-H1-p4i">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="-64" width="375" height="731"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="drg-A6-TcN">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="drg-A6-TcN">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="e8i-SO-I9J"/>
-                        <outlet property="delegate" destination="-1" id="ePM-YW-Onq"/>
+                        <outlet property="dataSource" destination="-1" id="P4h-lg-4bt"/>
+                        <outlet property="delegate" destination="-1" id="WnD-VX-bPt"/>
                     </connections>
                 </collectionView>
             </subviews>
@@ -40,7 +40,7 @@
             <constraints>
                 <constraint firstItem="elx-H1-p4i" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="EX4-gC-zdE"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="elx-H1-p4i" secondAttribute="bottom" id="Hs9-7d-AEG"/>
-                <constraint firstItem="elx-H1-p4i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RRH-uF-pnd"/>
+                <constraint firstItem="elx-H1-p4i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-64" id="RRH-uF-pnd"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="elx-H1-p4i" secondAttribute="trailing" id="UvI-4B-dTd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

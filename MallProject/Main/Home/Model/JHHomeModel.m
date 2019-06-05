@@ -16,6 +16,7 @@
     NSMutableArray *group = [NSMutableArray array];
     JHDataModel *bannerModel = [[JHDataModel alloc]init];
     bannerModel.count = 1;
+    bannerModel.edgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     bannerModel.itemType = JHDataModelType1;
     bannerModel.headerSize = CGSizeZero;
     bannerModel.footerSize = CGSizeZero;
@@ -27,17 +28,23 @@
         JHHomeFloorsModel *floor = homeModel.Floors[i];
         if ([floor.Type integerValue] == 104) {//商品
             JHDataModel *rowModel = [[JHDataModel alloc]init];
+            rowModel.edgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
+            
             rowModel.itemType = JHDataModelType2;
             rowModel.count = floor.Cells.count;
             rowModel.headerSize = CGSizeMake(ScreenW, 44);
             rowModel.footerSize = CGSizeZero;
             rowModel.cellID = productCellID;
-            rowModel.itemSize = CGSizeMake(ScreenW/2, 150);
+            rowModel.itemSize = CGSizeMake((ScreenW-40)/2, (ScreenW-40)/2+120);
+            for (int j = 0; j<floor.Cells.count; j++) {
+                JHHomeRowModel *rowModel = floor.Cells[j];
+                rowModel.cellSize = CGSizeMake((ScreenW-40)/2, (ScreenW-40)/2+120);
+            }
             rowModel.GroupArray = floor.Cells;
             [group addObject:rowModel];
         }
     }
-
+    
     self.sectionArray = group;
 }
 @end
@@ -57,5 +64,7 @@
 @implementation JHHomeRowModel
 
 @end
+
+
 
 

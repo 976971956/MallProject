@@ -49,10 +49,11 @@
 		E5AACA4322A7B94D00A98A34 /* JHHomeBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5AACA4122A7B94D00A98A34 /* JHHomeBannerCell.xib */; };
 		E5AACA4922A7B9DE00A98A34 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AACA4522A7B9DE00A98A34 /* PGIndexBannerSubiew.m */; };
 		E5AACA4A22A7B9DE00A98A34 /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AACA4622A7B9DE00A98A34 /* NewPagedFlowView.m */; };
-		E5AACA4E22A7BD3E00A98A34 /* JHHomeRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AACA4C22A7BD3E00A98A34 /* JHHomeRowCell.m */; };
-		E5AACA4F22A7BD3E00A98A34 /* JHHomeRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5AACA4D22A7BD3E00A98A34 /* JHHomeRowCell.xib */; };
 		E5AACA5522A7C93D00A98A34 /* UIView+BordSeting.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AACA5422A7C93D00A98A34 /* UIView+BordSeting.m */; };
 		E5AACA9D22A7EEF800A98A34 /* UINavigationBar+NavBackGroudColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AACA9C22A7EEF800A98A34 /* UINavigationBar+NavBackGroudColor.m */; };
+		E5AACAA522A8394000A98A34 /* NSString+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AACAA422A8394000A98A34 /* NSString+Operation.m */; };
+		E5AACAA922A839F600A98A34 /* JHHomeRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AACAA722A839F600A98A34 /* JHHomeRowCell.m */; };
+		E5AACAAA22A839F600A98A34 /* JHHomeRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5AACAA822A839F600A98A34 /* JHHomeRowCell.xib */; };
 		EC1D1462B5D50EF77DCCB159 /* Pods_MallProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9A556B088F6EF6C1A96971 /* Pods_MallProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -157,13 +158,15 @@
 		E5AACA4622A7B9DE00A98A34 /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
 		E5AACA4722A7B9DE00A98A34 /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
 		E5AACA4822A7B9DE00A98A34 /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
-		E5AACA4B22A7BD3E00A98A34 /* JHHomeRowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHHomeRowCell.h; sourceTree = "<group>"; };
-		E5AACA4C22A7BD3E00A98A34 /* JHHomeRowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHHomeRowCell.m; sourceTree = "<group>"; };
-		E5AACA4D22A7BD3E00A98A34 /* JHHomeRowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHHomeRowCell.xib; sourceTree = "<group>"; };
 		E5AACA5322A7C93D00A98A34 /* UIView+BordSeting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BordSeting.h"; sourceTree = "<group>"; };
 		E5AACA5422A7C93D00A98A34 /* UIView+BordSeting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+BordSeting.m"; sourceTree = "<group>"; };
 		E5AACA9B22A7EEF800A98A34 /* UINavigationBar+NavBackGroudColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavBackGroudColor.h"; sourceTree = "<group>"; };
 		E5AACA9C22A7EEF800A98A34 /* UINavigationBar+NavBackGroudColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavBackGroudColor.m"; sourceTree = "<group>"; };
+		E5AACAA322A8394000A98A34 /* NSString+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Operation.h"; sourceTree = "<group>"; };
+		E5AACAA422A8394000A98A34 /* NSString+Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Operation.m"; sourceTree = "<group>"; };
+		E5AACAA622A839F600A98A34 /* JHHomeRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHomeRowCell.h; sourceTree = "<group>"; };
+		E5AACAA722A839F600A98A34 /* JHHomeRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHomeRowCell.m; sourceTree = "<group>"; };
+		E5AACAA822A839F600A98A34 /* JHHomeRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHHomeRowCell.xib; sourceTree = "<group>"; };
 		FFC5C0BDC2B241A25AC036BC /* Pods-MallProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MallProject/Pods-MallProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -436,9 +439,9 @@
 		E567B79C22A51F920028298D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E5AACA4B22A7BD3E00A98A34 /* JHHomeRowCell.h */,
-				E5AACA4C22A7BD3E00A98A34 /* JHHomeRowCell.m */,
-				E5AACA4D22A7BD3E00A98A34 /* JHHomeRowCell.xib */,
+				E5AACAA622A839F600A98A34 /* JHHomeRowCell.h */,
+				E5AACAA722A839F600A98A34 /* JHHomeRowCell.m */,
+				E5AACAA822A839F600A98A34 /* JHHomeRowCell.xib */,
 				E5AACA3F22A7B94D00A98A34 /* JHHomeBannerCell.h */,
 				E5AACA4022A7B94D00A98A34 /* JHHomeBannerCell.m */,
 				E5AACA4122A7B94D00A98A34 /* JHHomeBannerCell.xib */,
@@ -530,6 +533,7 @@
 		E5AACA2822A6D65700A98A34 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				E5AACAA222A8394000A98A34 /* OCOperation */,
 				E5AACA4422A7B9DE00A98A34 /* NewPagedFlowView */,
 			);
 			path = SDK;
@@ -560,6 +564,15 @@
 				E5AACA4822A7B9DE00A98A34 /* NewPagedFlowView.h */,
 			);
 			path = NewPagedFlowView;
+			sourceTree = "<group>";
+		};
+		E5AACAA222A8394000A98A34 /* OCOperation */ = {
+			isa = PBXGroup;
+			children = (
+				E5AACAA322A8394000A98A34 /* NSString+Operation.h */,
+				E5AACAA422A8394000A98A34 /* NSString+Operation.m */,
+			);
+			path = OCOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -675,7 +688,7 @@
 				E567B72C22A50F820028298D /* Assets.xcassets in Resources */,
 				E567B72A22A50F810028298D /* Main.storyboard in Resources */,
 				E567B79A22A51F760028298D /* JHHomeViewController.xib in Resources */,
-				E5AACA4F22A7BD3E00A98A34 /* JHHomeRowCell.xib in Resources */,
+				E5AACAAA22A839F600A98A34 /* JHHomeRowCell.xib in Resources */,
 				E5AACA3C22A6D94C00A98A34 /* README.md in Resources */,
 				E567B7B022A5204F0028298D /* JHBuyCartViewController.xib in Resources */,
 			);
@@ -771,6 +784,7 @@
 				E567B78422A51C460028298D /* JHBaseTableViewController.m in Sources */,
 				E567B78822A51C460028298D /* JHBaseCollectionViewController.m in Sources */,
 				E567B7AF22A5204F0028298D /* JHBuyCartViewController.m in Sources */,
+				E5AACAA922A839F600A98A34 /* JHHomeRowCell.m in Sources */,
 				E567B73222A50F820028298D /* main.m in Sources */,
 				E5AACA4222A7B94D00A98A34 /* JHHomeBannerCell.m in Sources */,
 				E567B78F22A51C460028298D /* UITableViewCell+JHTableViewCell.m in Sources */,
@@ -781,6 +795,7 @@
 				E5AACA3B22A6D94C00A98A34 /* NSString+Unicode.m in Sources */,
 				E567B78922A51C460028298D /* JHDataModel.m in Sources */,
 				E567B72422A50F810028298D /* AppDelegate.m in Sources */,
+				E5AACAA522A8394000A98A34 /* NSString+Operation.m in Sources */,
 				E567B7B422A5205B0028298D /* JHMeViewController.m in Sources */,
 				E5AACA5522A7C93D00A98A34 /* UIView+BordSeting.m in Sources */,
 				E567B78C22A51C460028298D /* JHNetWorking.m in Sources */,
@@ -790,7 +805,6 @@
 				E567B78B22A51C460028298D /* JHError.m in Sources */,
 				E567B7AA22A5203B0028298D /* JHCategoryViewController.m in Sources */,
 				E5AACA9D22A7EEF800A98A34 /* UINavigationBar+NavBackGroudColor.m in Sources */,
-				E5AACA4E22A7BD3E00A98A34 /* JHHomeRowCell.m in Sources */,
 				E5AACA4A22A7B9DE00A98A34 /* NewPagedFlowView.m in Sources */,
 				E567B78722A51C460028298D /* JHBaseViewController.m in Sources */,
 			);

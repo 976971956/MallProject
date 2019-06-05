@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JHHomeModel.h"
 
 @interface JHHomeRowCell : UICollectionViewCell
-
+@property (nonatomic,strong)JHHomeRowModel *model;
 @end

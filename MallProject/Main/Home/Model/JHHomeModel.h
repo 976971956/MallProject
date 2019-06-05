@@ -122,3 +122,4 @@ static NSString *productCellID = @"productCellID";
 @property (nonatomic, assign) CGFloat bigImageListHeight; // 大图模式
 
 @end
+

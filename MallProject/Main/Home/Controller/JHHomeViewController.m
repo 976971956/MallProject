@@ -13,8 +13,7 @@
 #import "JHHomeRowCell.h"
 #import "UINavigationBar+NavBackGroudColor.h"
 #define HomeNavHeight 50
-@interface JHHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,NewPagedFlowViewDelegate, NewPagedFlowViewDataSource>
-
+@interface JHHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,NewPagedFlowViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (nonatomic,strong)JHHomeModel *homeModel;
@@ -85,6 +84,27 @@
     NSString *url = [NSString stringWithFormat:@"%@%@",httpUrl,@"Home/MIndex"];
     [self.parameter setObject:@"" forKey:@"userID"];
     KWeakSelf(self);
+//    [JHNetWorking postUrl:url parameters:self.parameter success:^(NSDictionary *dict) {
+//        NSNumber *code = [dict objectForKey:@"code"];
+//
+//        BOOL success;
+//
+//        if(code == nil || [code isKindOfClass:[NSNull class]] ){
+//            return ;
+//        }
+//        success = (code.intValue == 200);
+//
+//        if (success) {
+//            JHHomeModel *homeModel = [JHHomeModel mj_objectWithKeyValues:dict];
+//            [homeModel setingSectionDatas:homeModel];
+//            weakself.homeModel = homeModel;
+//            [weakself.collectionView reloadData];
+//        }else{
+//
+//        }
+//    } failure:^(NSError *error) {
+//
+//    }];
     [JHNetWorking shareInstance].post(url,self.parameter).showhud(YES).success(^(NSDictionary *dict, BOOL successful, JHError *error) {
         if (successful) {
             JHHomeModel *homeModel = [JHHomeModel mj_objectWithKeyValues:dict];
@@ -111,6 +131,11 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     JHDataModel *model = self.homeModel.sectionArray[indexPath.section];
+    
+    if (model.itemType == JHDataModelType2) {
+        JHHomeRowModel *rowModel = model.GroupArray[indexPath.row];
+        return rowModel.cellSize;
+    }
     return model.itemSize;
 }
 
@@ -119,12 +144,14 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:model.cellID forIndexPath:indexPath];
     if (model.itemType == JHDataModelType1) {
         ((JHHomeBannerCell *)cell).pagedView.delegate = self;
-        ((JHHomeBannerCell *)cell).pagedView.dataSource = self;
+//        ((JHHomeBannerCell *)cell).pagedView.dataSource = self;
         ((JHHomeBannerCell *)cell).imageArray = model.GroupArray;
-
-
-    }else if (model.itemType == JHDataModelType2){
         
+        
+    }else if (model.itemType == JHDataModelType2){
+        JHHomeRowModel *rowModel = model.GroupArray[indexPath.row];
+        
+        ((JHHomeRowCell *)cell).model = rowModel;
     }
     return cell;
 }
@@ -137,6 +164,7 @@
     JHDataModel *model = self.homeModel.sectionArray[section];
     return model.footerSize;
 }
+
 
 #pragma mark--UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
